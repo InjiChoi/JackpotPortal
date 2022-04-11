@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- SITE TITTLE -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>마이페이지</title>
+
+    <!-- PLUGINS CSS STYLE -->
+    <link href="plugins/jquery-ui/jquery-ui.min.css" rel="stylesheet" />
+    <!-- Bootstrap -->
+    <link
+      href="plugins/bootstrap/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <link
+      href="plugins/font-awesome/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+    <!-- Owl Carousel -->
+    <link href="plugins/slick-carousel/slick/slick.css" rel="stylesheet" />
+    <link
+      href="plugins/slick-carousel/slick/slick-theme.css"
+      rel="stylesheet"
+    />
+    <!-- Fancy Box -->
+    <link href="plugins/fancybox/jquery.fancybox.pack.css" rel="stylesheet" />
+    <link
+      href="plugins/jquery-nice-select/css/nice-select.css"
+      rel="stylesheet"
+    />
+    <link
+      href="plugins/seiyria-bootstrap-slider/dist/css/bootstrap-slider.min.css"
+      rel="stylesheet"
+    />
+    <!-- CUSTOM CSS -->
+    <link href="css/style.css" rel="stylesheet" />
+
+    <!-- FAVICON -->
+    <link href="img/favicon.png" rel="shortcut icon" />
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body class="body-wrapper">
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <nav class="navbar navbar-expand-lg navigation">
+              <a class="navbar-brand" href="index.html">
+                <img src="images/logo.png" alt="" />
+              </a>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto main-nav">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="dashboard.html">Dashboard</a>
+                  </li>
+                  <li class="nav-item dropdown dropdown-slide">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="#"
+                      data-toggle="dropdown"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                    >
+                      Pages <span><i class="fa fa-angle-down"></i></span>
+                    </a>
+                    <!-- Dropdown list -->
+                    <div class="dropdown-menu dropdown-menu-right">
+                      <a class="dropdown-item" href="category.html">Category</a>
+                      <a class="dropdown-item" href="single.html"
+                        >Single Page</a
+                      >
+                      <a class="dropdown-item" href="store-single.html"
+                        >Store Single</a
+                      >
+                      <a class="dropdown-item" href="dashboard.html"
+                        >Dashboard</a
+                      >
+                      <a class="dropdown-item" href="user-profile.html"
+                        >User Profile</a
+                      >
+                      <a class="dropdown-item" href="submit-coupon.html"
+                        >Submit Coupon</a
+                      >
+                      <a class="dropdown-item" href="blog.html">Blog</a>
+                      <a class="dropdown-item" href="single-blog.html"
+                        >Single Post</a
+                      >
+                    </div>
+                  </li>
+                  <li class="nav-item dropdown dropdown-slide">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href=""
+                      data-toggle="dropdown"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                    >
+                      Listing <span><i class="fa fa-angle-down"></i></span>
+                    </a>
+                    <!-- Dropdown list -->
+                    <div class="dropdown-menu dropdown-menu-right">
+                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Another action</a>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                  </li>
+                </ul>
+                <ul class="navbar-nav ml-auto mt-10">
+                  <li class="nav-item">
+                    <a class="nav-link login-button" href="index.html">Login</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link add-button" href="#"
+                      ><i class="fa fa-plus-circle"></i> Add Listing</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--==================================
+=            User Profile            =
+===================================-->
+    <section class="dashboard section">
+      <!-- Container Start -->
+      <div class="container">
+        <!-- Row Start -->
+        <div class="row align-items-center">
+          <div class="col-xl-12 col-lg-12 col-md-12 col-12">
+            <!-- Bg -->
+            <div class="bg-white rounded-bottom smooth-shadow-sm p-4">
+              <div
+                class="row d-flex align-items-center justify-content-between pt-4 pb-6 px-4"
+              >
+                <div class="d-flex align-items-center">
+                  <!-- avatar -->
+                  <div
+                    class="avatar-xxl avatar-indicators avatar-online me-2 position-relative d-flex justify-content-end align-items-end mt-n10"
+                  >
+                    <img
+                      src="images/avatar-question.png"
+                      class="avatar-xxl rounded-circle border border-4 border-white-color-40"
+                      alt=""
+                    />
+                    <a
+                      href="#!"
+                      class="position-absolute top-0 right-0 me-2"
+                      data-bs-toggle="tooltip"
+                      data-placement="top"
+                      title=""
+                      data-original-title="Verified"
+                    >
+                    </a>
+                  </div>
+                  <!-- text -->
+                  <div class="lh-1">
+                    <h2 class="mb-0 ml-2">
+                      먼지가짱이다
+                      <a
+                        href="#!"
+                        class="text-decoration-none"
+                        data-bs-toggle="tooltip"
+                        data-placement="top"
+                        title=""
+                        data-original-title="Beginner"
+                      >
+                      </a>
+                    </h2>
+                    <p class="mb-0 ml-3 d-block">부서명</p>
+                  </div>
+                </div>
+                <div>
+                  <a href="#" class="btn btn-outline-primary d-none d-md-block"
+                    >프로필 수정</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="row rounded-bottom smooth-shadow-sm">
+              <!-- content -->
+              <div class="py-6">
+                <!-- row -->
+                <div class="row">
+                  <div class="col-xl-12 col-lg-12 col-md-12 col-12 mb-6">
+                    <!-- card -->
+                    <div class="card">
+                      <!-- card body -->
+                      <div class="card-body">
+                        <!-- card title -->
+                        <h4 class="card-title">Overview</h4>
+                        <span
+                          class="text-uppercase fw-medium text-dark fs-5 ls-2"
+                          >등급</span
+                        >
+                        <img
+                          src="images/questionmark.png"
+                          id="popupRank"
+                          class="avatar avatar-md rounded-circle"
+                          data-toggle="popover"
+                          data-trigger="hover"
+                          data-html="true"
+                          width="15"
+                          alt=""
+                        />
+                        <script>
+                          var popupData =
+                            "나의 포인트에 따른 등급을 보여줍니다.<br/>Diamond : 400점 이상<br/> Platinum : 300점 이상<br/>Gold : 200점 이상<br/>Silver : 100점 이상<br/>Bronze : 50점 이상<br/>Iron : 0점 이상";
+                          document
+                            .getElementById("popupRank")
+                            .setAttribute("data-content", popupData);
+                        </script>
+                        <!-- text -->
+                        <table class="table table-sm table-bordered">
+                          <tbody class="text-center">
+                            <tr>
+                              <td colspan="2" class="table-secondary">
+                                Platinum 359.0P
+                              </td>
+                              <td rowspan="2" class="align-middle">
+                                Ranking
+                                <img src="images/2nd.png" width="50px" />
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>공유 : 256.0P</td>
+                              <td>활용 : 103.0P</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                        <!-- row -->
+                        <div class="row">
+                          <div class="col-6 mb-5">
+                            <!-- text -->
+                            <h6
+                              class="text-uppercase fs-5 ls-2 fa fa-bookmark-o"
+                            >
+                              나의 게시물 수
+                            </h6>
+                            <p class="mb-0">32</p>
+                          </div>
+                          <div class="col-6 mb-5">
+                            <h6
+                              class="text-uppercase fs-5 ls-2 fa fa-bookmark-o"
+                            >
+                              내가 댓글 단 게시물 수
+                            </h6>
+                            <p class="mb-0">156</p>
+                          </div>
+                          <div class="col-6 mb-5">
+                            <h6
+                              class="text-uppercase fs-5 ls-2 fa fa-bookmark-o"
+                            >
+                              나도 궁금한 게시물 수
+                            </h6>
+                            <p class="mb-0">89</p>
+                          </div>
+                          <div class="col-6">
+                            <h6
+                              class="text-uppercase fs-5 ls-2 fa fa-bookmark-o"
+                            >
+                              나의 매뉴얼 개수
+                            </h6>
+                            <p class="mb-0">5</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <script
+                    type="text/javascript"
+                    src="scripts/jquery-3.6.0.js"
+                  ></script>
+                  <script>
+                    $(function () {
+                      $('[data-toggle="popover"]').popover();
+                    });
+                  </script>
+                  <div class="col-xl-6 col-lg-12 col-md-12 col-12">
+                    <!-- card -->
+                    <div class="card">
+                      <!-- card body -->
+                      <div class="card-body">
+                        <!-- card title -->
+                        <h4 class="card-title fa fa-file-archive-o">
+                          내가 작성한 게시물
+                        </h4>
+                        <table
+                          class="table table-sm table-hover"
+                          style="font-size: 0.8em"
+                        >
+                          <thead>
+                            <tr class="text-center">
+                              <th>번호</th>
+                              <th>제목</th>
+                              <th>주제</th>
+                              <th>조회수</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td class="text-center">1</td>
+                              <td>
+                                <a href="single-blog.html">제목</a>
+                              </td>
+                              <td class="text-center">주제</td>
+                              <td class="text-center">15</td>
+                            </tr>
+                            <tr>
+                              <td class="text-center">2</td>
+                              <td><a href="#">아이폰 화면 캡쳐 방지</a></td>
+                              <td class="text-center">공통</td>
+                              <td class="text-center">100</td>
+                            </tr>
+                            <tr>
+                              <td class="text-center">3</td>
+                              <td>
+                                <a href="#">AI 통화비서 부가서비스 관련</a>
+                              </td>
+                              <td class="text-center">상품</td>
+                              <td class="text-center">129</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                        <nav>
+                          <ul class="pagination justify-content-center">
+                            <li class="page-item">
+                              <a class="page-link" href=""><</a>
+                            </li>
+                            <li class="page-item active">
+                              <a class="page-link" href="">1</a>
+                            </li>
+                            <li class="page-item">
+                              <a class="page-link" href="">2</a>
+                            </li>
+                            <li class="page-item">
+                              <a class="page-link" href="">3</a>
+                            </li>
+                            <li class="page-item">
+                              <a class="page-link" href="">></a>
+                            </li>
+                          </ul>
+                        </nav>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-6 col-lg-12 col-md-12 col-12 mb-6">
+                    <!-- card -->
+                    <div class="card">
+                      <!-- card body -->
+                      <div class="card-body">
+                        <!-- card title -->
+                        <h4 class="card-title fa fa-file-archive-o">
+                          내가 댓글 단 게시물
+                        </h4>
+                        <table
+                          class="table table-sm table-hover"
+                          style="font-size: 0.8em"
+                        >
+                          <thead>
+                            <tr class="text-center">
+                              <th>번호</th>
+                              <th>제목</th>
+                              <th>주제</th>
+                              <th>조회수</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td class="text-center">1</td>
+                              <td><a href="#">KT상품가이드북 신청</a></td>
+                              <td class="text-center">공통</td>
+                              <td class="text-center">15</td>
+                            </tr>
+                            <tr>
+                              <td class="text-center">2</td>
+                              <td><a href="#">통화중 대기음악 변경요청</a></td>
+                              <td class="text-center">상품</td>
+                              <td class="text-center">100</td>
+                            </tr>
+                            <tr>
+                              <td class="text-center">3</td>
+                              <td><a href="#">스카이라이프 채널</a></td>
+                              <td class="text-center">상품</td>
+                              <td class="text-center">129</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                        <nav>
+                          <ul class="pagination justify-content-center">
+                            <li class="page-item">
+                              <a class="page-link" href=""><</a>
+                            </li>
+                            <li class="page-item active">
+                              <a class="page-link" href="">1</a>
+                            </li>
+                            <li class="page-item">
+                              <a class="page-link" href="">2</a>
+                            </li>
+                            <li class="page-item">
+                              <a class="page-link" href="">3</a>
+                            </li>
+                            <li class="page-item">
+                              <a class="page-link" href="">></a>
+                            </li>
+                          </ul>
+                        </nav>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-6 col-lg-12 col-md-12 col-12 mb-6">
+                    <!-- card -->
+                    <div class="card">
+                      <!-- card body -->
+                      <div class="card-body">
+                        <!-- card title -->
+                        <h4 class="card-title fa fa-file-archive-o">
+                          나도 궁금한 게시물
+                        </h4>
+                        <table
+                          class="table table-sm table-hover"
+                          style="font-size: 0.8em"
+                        >
+                          <thead>
+                            <tr class="text-center">
+                              <th>번호</th>
+                              <th>제목</th>
+                              <th>주제</th>
+                              <th>조회수</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td class="text-center">1</td>
+                              <td><a href="#">KT멤버십 제휴사 관련</a></td>
+                              <td class="text-center">상품</td>
+                              <td class="text-center">10</td>
+                            </tr>
+                            <tr>
+                              <td class="text-center">2</td>
+                              <td><a href="#">올레TV 신청방법</a></td>
+                              <td class="text-center">상품</td>
+                              <td class="text-center">52</td>
+                            </tr>
+                            <tr>
+                              <td class="text-center">3</td>
+                              <td>
+                                <a href="#"
+                                  >k-box에 수정파일 등록이 안됩니다.</a
+                                >
+                              </td>
+                              <td class="text-center">공통</td>
+                              <td class="text-center">12</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                        <nav>
+                          <ul class="pagination justify-content-center">
+                            <li class="page-item">
+                              <a class="page-link" href=""><</a>
+                            </li>
+                            <li class="page-item active">
+                              <a class="page-link" href="">1</a>
+                            </li>
+                            <li class="page-item">
+                              <a class="page-link" href="">2</a>
+                            </li>
+                            <li class="page-item">
+                              <a class="page-link" href="">3</a>
+                            </li>
+                            <li class="page-item">
+                              <a class="page-link" href="">></a>
+                            </li>
+                          </ul>
+                        </nav>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-6 col-lg-12 col-md-12 col-12 mb-6">
+                    <!-- card -->
+                    <div class="card">
+                      <!-- card body -->
+                      <div class="card-body">
+                        <!-- card title -->
+                        <h4 class="card-title fa fa-file-archive-o">
+                          나의 매뉴얼
+                        </h4>
+                        <table
+                          class="table table-sm table-hover"
+                          style="font-size: 0.8em"
+                        >
+                          <thead>
+                            <tr class="text-center">
+                              <th>번호</th>
+                              <th>제목</th>
+                              <th>주제</th>
+                              <th>조회수</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td class="text-center">1</td>
+                              <td><a href="#">모바일로 실적확인하기</a></td>
+                              <td class="text-center">고객 Care</td>
+                              <td class="text-center">300</td>
+                            </tr>
+                            <tr>
+                              <td class="text-center">2</td>
+                              <td><a href="#">통신3사 부가서비스 비교</a></td>
+                              <td class="text-center">상품</td>
+                              <td class="text-center">1284</td>
+                            </tr>
+                            <tr>
+                              <td class="text-center">3</td>
+                              <td><a href="#">매장업무 지침서</a></td>
+                              <td class="text-center">고객 Care</td>
+                              <td class="text-center">1029</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                        <nav>
+                          <ul class="pagination justify-content-center">
+                            <li class="page-item">
+                              <a class="page-link" href=""><</a>
+                            </li>
+                            <li class="page-item active">
+                              <a class="page-link" href="">1</a>
+                            </li>
+                            <li class="page-item">
+                              <a class="page-link" href="">2</a>
+                            </li>
+                            <li class="page-item">
+                              <a class="page-link" href="">3</a>
+                            </li>
+                            <li class="page-item">
+                              <a class="page-link" href="">></a>
+                            </li>
+                          </ul>
+                        </nav>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Row End -->
+      </div>
+      <!-- Container End -->
+    </section>
+    <!--============================
+=            Footer            =
+=============================-->
+
+    <!-- JAVASCRIPTS -->
+    <script src="plugins/jquery/jquery.min.js"></script>
+    <script src="plugins/jquery-ui/jquery-ui.min.js"></script>
+    <script src="plugins/tether/js/tether.min.js"></script>
+    <script src="plugins/raty/jquery.raty-fa.js"></script>
+    <script src="plugins/bootstrap/dist/js/popper.min.js"></script>
+    <script src="plugins/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="plugins/seiyria-bootstrap-slider/dist/bootstrap-slider.min.js"></script>
+    <script src="plugins/slick-carousel/slick/slick.min.js"></script>
+    <script src="plugins/jquery-nice-select/js/jquery.nice-select.min.js"></script>
+    <script src="plugins/fancybox/jquery.fancybox.pack.js"></script>
+    <script src="plugins/smoothscroll/SmoothScroll.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCC72vZw-6tGqFyRhhg5CkF2fqfILn2Tsw"></script>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
