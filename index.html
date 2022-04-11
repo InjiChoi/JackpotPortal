@@ -1,24 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="description" content="" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <!-- Title -->
     <title>KT 지식관 포털 K-Box </title>
 
     <!-- Favicon -->
     <link rel="icon" href="logos/kt-logo.png" />
     <link href="img/favicon.png" rel="shortcut icon">
-    
-
     <link href="plugins/fancybox/jquery.fancybox.pack.css" rel="stylesheet">
+
     <!-- Style CSS -->
     <link rel="stylesheet" href="style.css" />
     <link href="./bootstrap/css/bootstrap.min.css" rel="stylesheet" />
@@ -28,896 +23,527 @@
     <!-- 폰트 -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500&display=swap"
-      rel="stylesheet"
-    />
-  </head>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500&display=swap" rel="stylesheet" />
+</head>
 
-  <body>
+<body>
     <!-- Preloader -->
     <!-- 팝업창? -->
     <div id="preloader">
-      <div class="preload-content">
-        <div id="original-load"></div>
-      </div>
-    </div>
-    <!-- Subscribe Modal -->
-    <div class="subscribe-newsletter-area">
-      <div
-        class="modal fade"
-        id="subsModal"
-        tabindex="-1"
-        role="dialog"
-        aria-labelledby="subsModal"
-        aria-hidden="true"
-      >
-        <div class="modal-dialog modal-dialog-centered" role="document">
-          <div class="modal-content">
-            <button
-              type="button"
-              class="close"
-              data-dismiss="modal"
-              aria-label="Close"
-            >
-              <span aria-hidden="true">&times;</span>
-            </button>
-            <div class="modal-body">
-              <h5 class="title">Subscribe to my newsletter</h5>
-              <form action="#" class="newsletterForm" method="post">
-                <input
-                  type="email"
-                  name="email"
-                  id="subscribesForm2"
-                  placeholder="Your e-mail here"
-                />
-                <button type="submit" class="btn original-btn">
-                  Subscribe
-                </button>
-              </form>
-            </div>
-          </div>
+        <div class="preload-content">
+            <div id="original-load"></div>
         </div>
-      </div>
     </div>
 
-    <!-- ##### Header Area Start ##### -->
+    <!-- 헤더 -->
     <header class="header-area">
-      <!-- Top Header Area -->
-      <div class="top-header">
-        <div class="container h-100">
-          <div class="row h-100 align-items-center">
-            <div class="col-12 col-sm-8">
-              <div class="breaking-news-area">
-                <div id="breakingNewsTicker" class="ticker">
-                  <ul>
-                    <li><a href="#">K-Box</a></li>
-                    <li><a href="#">KT 지식관 포털</a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="col-12 col-sm-4">
-                    <div class="subscribe-btn" style="display:grid; justify-content: end">
-                            <a
-                              href="mypage.html"
-                              class="btn"
-                              >마이페이지</a>
-                          </div> 
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Logo Area -->
-      <div class="logo-area text-center">
-        <div class="container h-100">
-          <div class="row h-100 align-items-center">
-            <div class="col-12">
-              <!-- <a href="index.html" class="original-logo"><img src="img/core-img/kbox.jpeg" alt=""></a> -->
-              <h1>K-Box</h1>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="original-nav-area" id="stickyNav">
-      <nav class="navbar sticky-top navbar-expand-md navbar-dark bg-dark">
-            <div class="container-fluid">
-              <a href="#" class="navbar-brand">
-                <img
-                  src="logos/kt-logo2.png"
-                  height="40"
-                  alt="KT"
-                  style="width:50px; height: 40;"
-                />
-              </a>
-              <button
-                type="button"
-                class="navbar-toggler"
-                data-bs-toggle="collapse"
-                data-bs-target="#navbarCollapse"
-              >
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarCollapse">
-                <div class="navbar-nav">
-                  <a href="#" class="nav-item nav-link">Home</a>
-                  <!--<a href="#" class="nav-item nav-link">About</a>-->
-                  <div class="nav-item dropdown">
-                    <a
-                      href="#"
-                      class="nav-link dropdown-toggle"
-                      data-bs-toggle="dropdown"
-                      >About</a
-                    >
-                    <div class="dropdown-menu">
-                      <a href="#" class="dropdown-item">Company</a>
-                      <a href="#" class="dropdown-item">Business</a>
-                      <a href="#" class="dropdown-item">CEO</a>
+        <!-- Top Header Area -->
+        <div class="top-header">
+            <div class="container h-100">
+                <div class="row h-100 align-items-center" style="display: flex;
+          flex-direction: column;">
+                    <div class="col-12 col-sm-8">
+                        <div class="breaking-news-area">
+                            <div id="breakingNewsTicker" class="ticker" style="height: 25px; margin-top: 30px;">
+                                <ul>
+                                    <li><a href="#">K-Box</a></li>
+                                    <li><a href="#">KT 지식관 포털</a></li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
-                  </div>
+
                 </div>
-            
-                <div class="navbar-nav ms-auto">
-                  
-             <div class="subscribe-btn">
-                    <a
-                      href="#"
-                      class="btn subscribe-btn"
-                      data-toggle="modal"
-                      data-target="#subsModal"
-                      >질문하기</a
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>  
-          </nav>
-    </div>
-          </div>
+            </div>
         </div>
-      </div>
+        <!-- 네비바 -->
+        <div class="original-nav-area" id="stickyNav">
+            <nav class="navbar sticky-top navbar-expand-md navbar-dark bg-dark">
+                <div class="container-fluid">
+                    <a href="#" class="navbar-brand">
+                        <img src="logos/kt-logo2.png" height="40" alt="KT" style="width:50px; height: 40;" />
+                    </a>
+                    <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarCollapse">
+                        <div class="navbar-nav">
+                            <div class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">메뉴얼</a>
+                                <div class="dropdown-menu">
+                                    <a href="#" class="dropdown-item">Customer 부문</a>
+                                    <a href="#" class="dropdown-item">Enterprise 부문</a>
+                                    <a href="#" class="dropdown-item">AI/DX 융합사업 부문</a>
+                                    <a href="#" class="dropdown-item">네트워크 부문</a>
+                                    <a href="#" class="dropdown-item">IT 부문</a>
+                                    <a href="#" class="dropdown-item">경영 부문</a>
+                                    <a href="#" class="dropdown-item">지역 본부</a>
+                                </div>
+                            </div>
+
+                            <div class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">QnA 게시판</a>
+                                <div class="dropdown-menu">
+                                    <a href="#" class="dropdown-item">Customer 부문</a>
+                                    <a href="#" class="dropdown-item">Enterprise 부문</a>
+                                    <a href="#" class="dropdown-item">AI/DX 융합사업 부문</a>
+                                    <a href="#" class="dropdown-item">네트워크 부문</a>
+                                    <a href="#" class="dropdown-item">IT 부문</a>
+                                    <a href="#" class="dropdown-item">경영 부문</a>
+                                    <a href="#" class="dropdown-item">지역 본부</a>
+                                </div>
+                            </div>
+
+                            <a href="mypage.html" class="nav-item nav-link">마이 페이지</a>
+                        </div>
+
+                        <div id="search-wrapper" class="search-expanded">
+                            <form action="#">
+                                <input type="text" id="search" placeholder="궁금한 내용을 검색해보세요!">
+                                <div id="close-icon" style="display: block;" class="closing">
+
+                                </div>
+                                <input class="d-none" type="submit" value="">
+                            </form>
+                        </div>
+
+                        <!-- <div class="navbar-nav ms-auto"> -->
+
+                        <div class="write-btn" style="margin-left:auto">
+                            <a href="blog-post.html" class="btn write-btn" style="font-size:15px">글쓰기</a>
+                            <!-- </div> -->
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        </div>
+        </div>
+        </div>
     </header>
-    <!-- ##### Header Area End ##### -->
-
-    <section class="popular-deals section">
-            <div class="container">
-              <div class="row">
-                <div class="col-md-12">
-                  <div class="section-title">
-                    <h2>베스트 포스트</h2>
-                    <p>
-                      실시간 추천 순 게시글
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-         </section>
 
 
-
-
-    <div class="hero-area">
-            <!-- Hero Slides Area -->
-            <div class="hero-slides owl-carousel">
-                <!-- Single Slide -->
-                <div class="single-hero-slide bg-img" style="background-color: #EDF2F4;">
-                    <div class="container h-100">
-                        <div class="row h-100 align-items-center">
-                            <div class="col-12">
-                                <div class="slide-content text-center">
-                                        <!-- <div class="product-item bg-light" data-animation="fadeInUp">
-                                                <div class="card" data-animation="fadeInUp">
-                                                  <div class="card-body">
-                                                    <h4 class="card-title">
-                                                      <a href="">11inch Macbook Air</a>
-                                                    </h4>
-                                                    <ul class="list-inline product-meta">
-                                                      <li class="list-inline-item">
-                                                        <a href=""
-                                                          ><i class="fa fa-folder-open-o"></i>Electronics</a
-                                                        >
-                                                      </li>
-                                                      <li class="list-inline-item">
-                                                        <a href=""
-                                                          ><i class="fa fa-calendar"></i>26th December</a
-                                                        >
-                                                      </li>
-                                                    </ul>
-                                                    <p class="card-text">
-                                                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                                      Explicabo, aliquam!
-                                                    </p>
-                                                  </div>
-                                                </div>
-                                              </div> -->
-                                              <div
-              class="single-blog-area blog-style-2 mb-50 wow fadeInUp"
-              data-wow-delay="0.3s"
-              data-wow-duration="1000ms"
-            >
-              <div class="row align-items-center">
-                <div class="col-12 col-md-6">
-                 
-                </div>
-                <div class="col-12 col-md-6">
-                  <!-- Blog Content -->
-                  <div class="single-blog-content">
-                    <div class="line"></div>
-                    <a href="#" class="post-tag">Lifestyle</a>
-                    <h4>
-                      <a href="#" class="post-headline"
-                        >We love colors in 2018</a
-                      >
-                    </h4>
-                    <p>
-                      Curabitur venenatis efficitur lorem sed tempor. Integer
-                      aliquet tempor cursus. Nullam vestibulum convallis risus
-                      vel condimentum. Nullam auctor lorem in libero luctus, vel
-                      volutpat quam tincidunt.
-                    </p>
-                    <div class="post-meta">
-                      <p>By <a href="#">james smith</a></p>
-                      <p>3 comments</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="single-hero-slide bg-img" style="background-color:#8D99AE;">
-                        <div class="container h-100">
-                            <div class="row h-100 align-items-center">
-                                <div class="col-12">
-                                    <div class="slide-content text-center">
-                                            <div class="product-item bg-light" data-animation="fadeInUp">
-                                                    <div class="card" data-animation="fadeInUp">
-                                                      <div class="card-body">
-                                                        <h4 class="card-title">
-                                                          <a href="">11inch Macbook Air</a>
-                                                        </h4>
-                                                        <ul class="list-inline product-meta">
-                                                          <li class="list-inline-item">
-                                                            <a href=""
-                                                              ><i class="fa fa-folder-open-o"></i>Electronics</a
-                                                            >
-                                                          </li>
-                                                          <li class="list-inline-item">
-                                                            <a href=""
-                                                              ><i class="fa fa-calendar"></i>26th December</a
-                                                            >
-                                                          </li>
-                                                        </ul>
-                                                        <p class="card-text">
-                                                          Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                                          Explicabo, aliquam!
-                                                        </p>
-                                                      </div>
-                                                    </div>
-                                                  </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                <!-- Single Slide -->
-                <div class="single-hero-slide bg-img" style="background-color:#2B2D42;">
-                    <div class="container h-100">
-                        <div class="row h-100 align-items-center">
-                            <div class="col-12">
-                                <div class="slide-content text-center">
-                                    <div class="product-item bg-light" data-animation="fadeInUp">
-                                            <div class="card" data-animation="fadeInUp">
-                                              <div class="card-body">
-                                                <h4 class="card-title">
-                                                  <a href="">11inch Macbook Air</a>
-                                                </h4>
-                                                <ul class="list-inline product-meta">
-                                                  <li class="list-inline-item">
-                                                    <a href=""
-                                                      ><i class="fa fa-folder-open-o"></i>Electronics</a
-                                                    >
-                                                  </li>
-                                                  <li class="list-inline-item">
-                                                    <a href=""
-                                                      ><i class="fa fa-calendar"></i>26th December</a
-                                                    >
-                                                  </li>
-                                                </ul>
-                                                <p class="card-text">
-                                                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                                  Explicabo, aliquam!
-                                                </p>
-                                              </div>
-                                            </div>
-                                          </div>
-                                
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-            </div>
+    <!-- 태그 -->
+    <div class="container">
+        <div class="section-title" style="margin-top: 30px; margin-bottom: 50px;">
+            <h5 class="title">인기 검색태그</h5>
         </div>
 
-           
-    <!-- ##### Blog Wrapper Start ##### -->
-
-
-
-
-    <div class="blog-wrapper section-padding-100 clearfix">
-        
-      <div class="container">
-        <div class="row">
-          <!-- <div class="col-12 col-lg-9"> -->
-              <div class="col-sm">
-            <!-- Single Blog Area  -->      
-
-            <div
-              class="single-blog-area blog-style-2 mb-50 wow fadeInUp"
-              data-wow-delay="0.2s"
-              data-wow-duration="1000ms"
-            >
-              <div class="row align-items-center">
-                <div class="col-12 col-md-4">
-                  <div class="section-title">
-                        <h2>내 분야 베스트 메뉴얼</h2>
-                        <p>
-                         추천 Best 메뉴얼
-                        </p>
-                      </div>
-                      <div
-                      class="col-12">
-                      <div class="category-block">
-                        <div class="header">
-                          <i class="fa icon-bg-1"></i>
-                          <h4>IT 부문</h4>
-                        </div>
-                        <ul class="category-list">
-                          <li>
-                            <a href="category.html">Laptops <span>93</span></a>
-                          </li>
-                          <li>
-                            <a href="category.html">Iphone <span>233</span></a>
-                          </li>
-                          <li>
-                            <a href="category.html">Microsoft <span>183</span></a>
-                          </li>
-                          <li>
-                            <a href="category.html">Monitors <span>343</span></a>
-                          </li>
-                        </ul>
-                      </div>
-                    </div> 
-
-                </div>
-                <div class="col-12 col-md-4">
-                  <div class="section-title">
-                        <h2>내 분야 베스트 메뉴얼</h2>
-                        <p>
-                         추천 Best 메뉴얼
-                        </p>
-                      </div>
-                      <div
-                      class="col-12">
-                      <div class="category-block">
-                        <div class="header">
-                          <i class="fa icon-bg-1"></i>
-                          <h4>IT 부문</h4>
-                        </div>
-                        <ul class="category-list">
-                          <li>
-                            <a href="category.html">BM 게시글 작성 권한 요청 <span>93</span></a>
-                          </li>
-                          <li>
-                            <a href="category.html">담당자 변경 요청 <span>233</span></a>
-                          </li>
-                          <li>
-                            <a href="category.html">Ktalk 기능 개선 요청 <span>183</span></a>
-                          </li>
-                          <li>
-                            <a href="category.html">구매처 등록 매뉴얼 <span>343</span></a>
-                          </li>
-                        </ul>
-                      </div>
-                </div>
-              </div>
-
-              <!-- 플필 -->
-              <div class="col-12 col-md-4">
-
-                    <div class="section-title">
-                            <div class="widget user-dashboard-profile" style="
-                            margin-top: -50px;
-                        ">
-                                    <!-- User Image -->
-                                    <div class="profile-thumb">
-                                      <img
-                                        src="images/user/user-thumb.jpeg"
-                                        alt=""
-                                        class="circle"
-                                      />
-                                    </div>
-                                    <!-- User Name -->
-                                    <h5 class="text-center">케이티 김</h5>
-                                    <p>IT부문 신입사원</p>
-                                    <a href="user-profile.html" class="btn btn-main-sm"
-                                    style="background: #5672f9;
-                                    color: #fff;">내 정보 수정</a>
-                                  </div>
-                          </div>
-
-                          <div class="col-12">
-                                <div class="category-block" style="margin-top: -60px">
-                                        <div class="widget user-dashboard-menu">
-                                                <ul>
-                                                  <li>
-                                                    <a href="dashboard-favourite-ads.html"
-                                                      ><i class="fa fa-bookmark-o"></i> 저장한 질문
-                                                      <span>5</span></a
-                                                    >
-                                                  </li>
-                                                  <li>
-                                                    <a href="dashboard-archived-ads.html"
-                                                      ><i class="fa fa-file-archive-o"></i>저장한 메뉴얼
-                                                      <span>12</span></a
-                                                    >
-                                                  </li>
-                                                  <li>
-                                                    <a href="dashboard-pending-ads.html"
-                                                      ><i class="fa fa-bolt"></i> 내 포인트 <span
-                                                        >23</span
-                                                      ></a
-                                                    >
-                                                  </li>
-                                              
-                                                </ul>
-                                              </div>
-                          </div>
-                          </div>
-                  
-                </div>
-
-                <!-- 플필 -->
+        <div class="sidebar-widget-area">
+            <div class="widget-content">
+                <ul class="tags">
+                    <li><a href="#" style="text-decoration:none">AI</a></li>
+                    <li><a href="#" style="text-decoration:none">자율주행</a></li>
+                    <li><a href="#" style="text-decoration:none">신사업개발</a></li>
+                    <li><a href="#" style="text-decoration:none">안전점검</a></li>
+                    <li><a href="#" style="text-decoration:none">아이디어불패의 법칙</a></li>
+                    <li><a href="#" style="text-decoration:none">상생협력법</a></li>
+                    <li><a href="#" style="text-decoration:none">충청아이디어</a></li>
+                    <li><a href="#" style="text-decoration:none">코로나</a></li>
+                    <li><a href="#" style="text-decoration:none">고객발 자기혁신</a></li>
+                </ul>
             </div>
-
-            <!-- Single Blog Area  -->
-            <div
-              class="single-blog-area blog-style-2 mb-50 wow fadeInUp"
-              data-wow-delay="0.3s"
-              data-wow-duration="1000ms"
-            >
-              <div class="row align-items-center">
-                <div class="col-12 col-md-6">
-                        <div class="sidebar-widget-area">
-                                <h5 class="title">인기 검색태그</h5>
-                                <div class="widget-content">
-                                  <ul class="tags">
-                                    <li><a href="#">AI</a></li>
-                                    <li><a href="#">자율주행</a></li>
-                                    <li><a href="#">신사업개발</a></li>
-                                    <li><a href="#">안전점검</a></li>
-                                    <li><a href="#">아이디어불패의 법칙</a></li>
-                                    <li><a href="#">상생협력법</a></li>
-                                    <li><a href="#">충청아이디어</a></li>
-                                    <li><a href="#">코로나</a></li>
-                                  </ul>
-                                </div>
-                              </div>
-                </div>
-                <div class="col-12 col-md-6">
-                  <!-- Blog Content -->
-                  <div class="sidebar-widget-area">
-                        <h5 class="title">랭킹</h5>
-        
-                        <div class="widget-content">
-                          <!-- Single Blog Post -->
-                          <div
-                            class="single-blog-post d-flex align-items-center widget-post"
-                          >
-                            <!-- Post Thumbnail -->
-                            <div class="post-thumbnail">
-                              <img src="img/blog-img/lp1.jpg" alt="" />
-                            </div>
-                            <!-- Post Content -->
-                            <div class="post-content">
-                              <a href="#" class="post-tag">Enterprise 부문</a>
-                              <h4><a href="#" class="post-headline">뽀로로 님</a></h4>
-                              <div class="post-meta">
-                                <p><a href="#">1500 points</a></p>
-                              </div>
-                            </div>
-                          </div>
-        
-                          <!-- Single Blog Post -->
-                          <div
-                            class="single-blog-post d-flex align-items-center widget-post"
-                          >
-                            <!-- Post Thumbnail -->
-                            <div class="post-thumbnail">
-                              <img src="img/blog-img/lp2.jpg" alt="" />
-                            </div>
-                            <!-- Post Content -->
-                            <div class="post-content">
-                              <a href="#" class="post-tag">네트워크 부문</a>
-                              <h4><a href="#" class="post-headline">케박캐 님</a></h4>
-                              <div class="post-meta">
-                                <p><a href="#">1200 points</a></p>
-                              </div>
-                            </div>
-                          </div>
-        
-                          <!-- Single Blog Post -->
-                          <div
-                            class="single-blog-post d-flex align-items-center widget-post"
-                          >
-                            <!-- Post Thumbnail -->
-                            <div class="post-thumbnail">
-                              <img src="img/blog-img/lp3.jpg" alt="" />
-                            </div>
-                            <!-- Post Content -->
-                            <div class="post-content">
-                              <a href="#" class="post-tag">강북/강원광역본부</a>
-                              <h4>
-                                <a href="#" class="post-headline">춘천닥갈비 님</a>
-                              </h4>
-                              <div class="post-meta">
-                                <p><a href="#">1100 points</a></p>
-                              </div>
-                            </div>
-                          </div>
-        
-                          <!-- Single Blog Post -->
-                          <div
-                            class="single-blog-post d-flex align-items-center widget-post"
-                          >
-                            <!-- Post Thumbnail -->
-                            <div class="post-thumbnail">
-                              <img src="img/blog-img/lp4.jpg" alt="" />
-                            </div>
-                            <!-- Post Content -->
-                            <div class="post-content">
-                              <a href="#" class="post-tag">IT 부문</a>
-                              <h4>
-                                <a href="#" class="post-headline">배고픈댕댕 님</a>
-                              </h4>
-                              <div class="post-meta">
-                                <p><a href="#">1000 points</a></p>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Single Blog Area  -->
-            <div
-              class="single-blog-area blog-style-2 mb-50 wow fadeInUp"
-              data-wow-delay="0.5s"
-              data-wow-duration="1000ms"
-            >
-              <div class="row align-items-center">
-                <div class="col-12 col-md-6">
-                  <div class="single-blog-thumbnail">
-                    <img src="img/blog-img/5.jpg" alt="" />
-                    <div class="post-date">
-                      <a href="#">12 <span>march</span></a>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-12 col-md-6">
-                  <!-- Blog Content -->
-                  <div class="single-blog-content">
-                    <div class="line"></div>
-                    <a href="#" class="post-tag">Lifestyle</a>
-                    <h4>
-                      <a href="#" class="post-headline"
-                        >Party people in the house</a
-                      >
-                    </h4>
-                    <p>
-                      Curabitur venenatis efficitur lorem sed tempor. Integer
-                      aliquet tempor cursus. Nullam vestibulum convallis risus
-                      vel condimentum. Nullam auctor lorem in libero luctus, vel
-                      volutpat quam tincidunt.
-                    </p>
-                    <div class="post-meta">
-                      <p>By <a href="#">james smith</a></p>
-                      <p>3 comments</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Single Blog Area  -->
-            <div
-              class="single-blog-area blog-style-2 mb-50 wow fadeInUp"
-              data-wow-delay="0.6s"
-              data-wow-duration="1000ms"
-            >
-              <div class="row align-items-center">
-                <div class="col-12 col-md-6">
-                  <div class="single-blog-thumbnail">
-                    <img src="img/blog-img/6.jpg" alt="" />
-                    <div class="post-date">
-                      <a href="#">12 <span>march</span></a>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-12 col-md-6">
-                  <!-- Blog Content -->
-                  <div class="single-blog-content">
-                    <div class="line"></div>
-                    <a href="#" class="post-tag">Lifestyle</a>
-                    <h4>
-                      <a href="#" class="post-headline"
-                        >We love colors in 2018</a
-                      >
-                    </h4>
-                    <p>
-                      Curabitur venenatis efficitur lorem sed tempor. Integer
-                      aliquet tempor cursus. Nullam vestibulum convallis risus
-                      vel condimentum. Nullam auctor lorem in libero luctus, vel
-                      volutpat quam tincidunt.
-                    </p>
-                    <div class="post-meta">
-                      <p>By <a href="#">james smith</a></p>
-                      <p>3 comments</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Load More -->
-            <div
-              class="load-more-btn mt-100 wow fadeInUp"
-              data-wow-delay="0.7s"
-              data-wow-duration="1000ms"
-            >
-              <a href="#" class="btn original-btn">Read More</a>
-            </div>
-          </div>
-        
-          <div class="col-12 col-md-4 col-lg-3">
-            <div class="post-sidebar-area">
-              <!-- Widget Area -->
-              <div class="sidebar-widget-area">
-                <div class="widget-content">
-                    
-                        <section class="user-profile section">
-                                <div class="container">
-                                  <div class="row">
-                                    <div class="col-md-10">
-                                      <div class="sidebar">
-                                        <!-- User Widget -->
-                                        <div class="widget user-dashboard-profile">
-                                          <!-- User Image -->
-                                          <div class="profile-thumb">
-                                            <img
-                                              src="images/user/user-thumb.jpeg"
-                                              alt=""
-                                              class="circle"
-                                            />
-                                          </div>
-                                          <!-- User Name -->
-                                          <h5 class="text-center">케이티 김</h5>
-                                          <p>IT부문 신입사원</p>
-                                        </div>
-                                        <!-- Dashboard Links -->
-                                        <div class="widget user-dashboard-menu">
-                                          <ul>
-                                            <li>
-                                              <a href="dashboard-my-ads.html"
-                                                ><i class="fa fa-user"></i>내 정보 수정</a
-                                              >
-                                            </li>
-                                            <li>
-                                              <a href="dashboard-favourite-ads.html"
-                                                ><i class="fa fa-bookmark-o"></i> 저장한 질문
-                                                <span>5</span></a
-                                              >
-                                            </li>
-                                            <li>
-                                              <a href="dashboard-archived-ads.html"
-                                                ><i class="fa fa-file-archive-o"></i>저장한 메뉴얼
-                                                <span>12</span></a
-                                              >
-                                            </li>
-                                            <li>
-                                              <a href="dashboard-pending-ads.html"
-                                                ><i class="fa fa-bolt"></i> 내 포인트 <span
-                                                  >23</span
-                                                ></a
-                                              >
-                                            </li>
-                                        
-                                          </ul>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </section>
-
-
-                </div>
-              </div>
-
-              <!-- Widget Area -->
-              <div class="sidebar-widget-area">
-                <h5 class="title">랭킹</h5>
-
-                <div class="widget-content">
-                  <!-- Single Blog Post -->
-                  <div
-                    class="single-blog-post d-flex align-items-center widget-post"
-                  >
-                    <!-- Post Thumbnail -->
-                    <div class="post-thumbnail">
-                      <img src="img/blog-img/lp1.jpg" alt="" />
-                    </div>
-                    <!-- Post Content -->
-                    <div class="post-content">
-                      <a href="#" class="post-tag">Enterprise 부문</a>
-                      <h4><a href="#" class="post-headline">뽀로로 님</a></h4>
-                      <div class="post-meta">
-                        <p><a href="#">1500 points</a></p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <!-- Single Blog Post -->
-                  <div
-                    class="single-blog-post d-flex align-items-center widget-post"
-                  >
-                    <!-- Post Thumbnail -->
-                    <div class="post-thumbnail">
-                      <img src="img/blog-img/lp2.jpg" alt="" />
-                    </div>
-                    <!-- Post Content -->
-                    <div class="post-content">
-                      <a href="#" class="post-tag">네트워크 부문</a>
-                      <h4><a href="#" class="post-headline">케박캐 님</a></h4>
-                      <div class="post-meta">
-                        <p><a href="#">1200 points</a></p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <!-- Single Blog Post -->
-                  <div
-                    class="single-blog-post d-flex align-items-center widget-post"
-                  >
-                    <!-- Post Thumbnail -->
-                    <div class="post-thumbnail">
-                      <img src="img/blog-img/lp3.jpg" alt="" />
-                    </div>
-                    <!-- Post Content -->
-                    <div class="post-content">
-                      <a href="#" class="post-tag">강북/강원광역본부</a>
-                      <h4>
-                        <a href="#" class="post-headline">춘천닥갈비 님</a>
-                      </h4>
-                      <div class="post-meta">
-                        <p><a href="#">1100 points</a></p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <!-- Single Blog Post -->
-                  <div
-                    class="single-blog-post d-flex align-items-center widget-post"
-                  >
-                    <!-- Post Thumbnail -->
-                    <div class="post-thumbnail">
-                      <img src="img/blog-img/lp4.jpg" alt="" />
-                    </div>
-                    <!-- Post Content -->
-                    <div class="post-content">
-                      <a href="#" class="post-tag">IT 부문</a>
-                      <h4>
-                        <a href="#" class="post-headline">배고픈댕댕 님</a>
-                      </h4>
-                      <div class="post-meta">
-                        <p><a href="#">1000 points</a></p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Widget Area -->
-              <div class="sidebar-widget-area">
-                <h5 class="title">인기 검색태그</h5>
-                <div class="widget-content">
-                  <ul class="tags">
-                    <li><a href="#">AI</a></li>
-                    <li><a href="#">자율주행</a></li>
-                    <li><a href="#">신사업개발</a></li>
-                    <li><a href="#">안전점검</a></li>
-                    <li><a href="#">아이디어불패의 법칙</a></li>
-                    <li><a href="#">상생협력법</a></li>
-                    <li><a href="#">충청아이디어</a></li>
-                    <li><a href="#">코로나</a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
-      </div>
     </div>
-    <!-- ##### Blog Wrapper End ##### -->
+    <!-- 테크 끝 -->
 
-    <!-- ##### Footer Area Start ##### -->
-    <footer class="footer-area text-center">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <!-- Footer Nav Area -->
-            <div class="classy-nav-container breakpoint-off">
-              <!-- Classy Menu -->
-              <nav class="classy-navbar justify-content-center">
-                <!-- Navbar Toggler -->
-                <div class="classy-navbar-toggler">
-                  <span class="navbarToggler"
-                    ><span></span><span></span><span></span
-                  ></span>
-                </div>
-
-                <!-- Menu -->
-                <div class="classy-menu">
-                  <!-- close btn -->
-                  <div class="classycloseIcon">
-                    <div class="cross-wrap">
-                      <span class="top"></span><span class="bottom"></span>
+    <!-- 베스트 포스트 -->
+    <!-- 베스트 포스트 타이틀 -->
+    <section class="popular-deals section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-title">
+                        <h2>베스트 포스트</h2>
+                        <p>
+                            실시간 추천 순 게시글
+                        </p>
                     </div>
-                  </div>
-
-                  <!-- Nav Start -->
-                  <div class="classynav">
-                    <ul>
-                      <li><a href="#">Home</a></li>
-                      <li><a href="#">About Us</a></li>
-                      <li><a href="#">Lifestyle</a></li>
-                      <li><a href="#">travel</a></li>
-                      <li><a href="#">Music</a></li>
-                      <li><a href="#">Contact</a></li>
-                    </ul>
-                  </div>
-                  <!-- Nav End -->
                 </div>
-              </nav>
             </div>
-          </div>
         </div>
-      </div>
-    </footer>
-    <!-- ##### Footer Area End ##### -->
+    </section>
+    <!-- 베스트 포스트 컨텐츠 -->
+    <div class="hero-area">
+        <div class="hero-slides owl-carousel">
+            <!-- 슬라이드 1 -->
+            <div class="single-hero-slide bg-img" style="background-color: #EDF2F4; height: 300px;">
+                <div class="container h-100">
+                    <div class="row h-100 align-items-center">
+                        <div class="col-12">
+                            <div class="slide-content text-center">
+                                <div class="product-item bg-light" style="border-radius:20%;">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <ul class="list-inline product-meta">
+                                                <li class="list-inline-item">
+                                                    <a href="" style="text-decoration:none; font-size: 15px;"><i class="fa fa-folder-open-o"></i>광역
+                                                        본부</a>
+                                                </li>
+                                                <li class="list-inline-item">
+                                                    <a href="" style="text-decoration:none; font-size: 15px;"><i class="fa fa-calendar"></i>2022-04-10</a>
+                                                </li>
+                                            </ul>
+                                            <h4 class="card-title">
+                                                <a href="single-blog.html" style="text-decoration:none; font-size: 20px;"> 사내
+                                                    컴퓨터 vpn 설정하는 법</a>
+                                            </h4>
 
-    <!-- jQuery (Necessary for All JavaScript Plugins) -->
-    <script src="js/jquery/jquery-2.2.4.min.js"></script>
-    <!-- Popper js -->
-    <script src="js/popper.min.js"></script>
-    <!-- Bootstrap js -->
-    <script src="js/bootstrap.min.js"></script>
-    <!-- Plugins js -->
-    <script src="js/plugins.js"></script>
-    <!-- Active js -->
-    <script src="js/active.js"></script>
-  </body>
+                                            <ul class="list-inline product-meta" style="margin-top:20px">
+                                                <li class="list-inline-item">
+                                                    <a href="" style="text-decoration:none; font-size: 15px;"><i class="fa fa-thumbs-o-up"></i>30</a>
+                                                </li>
+                                                <li class="list-inline-item">
+                                                    <a href="" style="text-decoration:none; font-size: 15px;"><i class="fa fa-heart"></i>10</a>
+                                                </li>
+                                                <li class="list-inline-item">
+                                                    <a href="" style="text-decoration:none; font-size: 15px;"><i class="fa fa-mail-forward"></i>30</a>
+                                                </li>
+                                            </ul>
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 슬라이드 2  -->
+            <div class="single-hero-slide bg-img" style="background-color:#8D99AE; height: 300px;">
+                <div class="container h-100">
+                    <div class="row h-100 align-items-center">
+                        <div class="col-12">
+                            <div class="slide-content text-center">
+                                <div class="product-item bg-light" style="border-radius:20%;">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <ul class="list-inline product-meta">
+                                                <li class="list-inline-item">
+                                                    <a href="single-blog.html" style="text-decoration:none; font-size: 15px;"><i
+                                                            class="fa fa-folder-open-o"></i>IT 부문</a>
+                                                </li>
+                                                <li class="list-inline-item">
+                                                    <a href="" style="text-decoration:none; font-size: 15px;"><i class="fa fa-calendar"></i>2022-03-10</a>
+                                                </li>
+                                            </ul>
+                                            <h4 class="card-title">
+                                                <a href="" style="text-decoration:none; font-size: 20px;"> 데이터 분석 마라톤 빡센가요?</a>
+                                            </h4>
+
+                                            <ul class="list-inline product-meta" style="margin-top:20px">
+                                                <li class="list-inline-item">
+                                                    <a href="" style="text-decoration:none; font-size: 15px;"><i class="fa fa-thumbs-o-up"></i>20</a>
+                                                </li>
+                                                <li class="list-inline-item">
+                                                    <a href="" style="text-decoration:none; font-size: 15px;"><i class="fa fa-heart"></i>40</a>
+                                                </li>
+                                                <li class="list-inline-item">
+                                                    <a href="" style="text-decoration:none; font-size: 15px;"><i class="fa fa-mail-forward"></i>5</a>
+                                                </li>
+                                            </ul>
+
+
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 슬라이드 3 -->
+            <div class="single-hero-slide bg-img" style="background-color:#2B2D42; height: 300px;">
+                <div class="container h-100">
+                    <div class="row h-100 align-items-center">
+                        <div class="col-12">
+                            <div class="slide-content text-center">
+                                <div class="product-item bg-light" style="border-radius:20%;">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <ul class="list-inline product-meta">
+                                                <li class="list-inline-item">
+                                                    <a href="single-blog.html" style="text-decoration:none; font-size: 15px;"><i
+                                                            class="fa fa-folder-open-o"></i>공통</a>
+                                                </li>
+                                                <li class="list-inline-item">
+                                                    <a href="" style="text-decoration:none; font-size: 15px;"><i class="fa fa-calendar"></i>2022-04-07</a>
+                                                </li>
+                                            </ul>
+                                            <h4 class="card-title">
+                                                <a href="" style="text-decoration:none; font-size: 20px;">이런 경우 의료비 지원 받을
+                                                    수 있나요?</a>
+                                            </h4>
+
+                                            <ul class="list-inline product-meta" style="margin-top:20px">
+                                                <li class="list-inline-item">
+                                                    <a href="" style="text-decoration:none; font-size: 15px;"><i class="fa fa-thumbs-o-up"></i>50</a>
+                                                </li>
+                                                <li class="list-inline-item">
+                                                    <a href="" style="text-decoration:none; font-size: 15px;"><i class="fa fa-heart"></i>20</a>
+                                                </li>
+                                                <li class="list-inline-item">
+                                                    <a href="" style="text-decoration:none; font-size: 15px;"><i class="fa fa-mail-forward"></i>15</a>
+                                                </li>
+                                            </ul>
+
+
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 베-포 끝 -->
+
+    <!-- hit 부분 -->
+    <div class="blog-wrapper section-padding-100 clearfix">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm">
+                    <div class="single-blog-area blog-style-2 mb-50 wow fadeInUp" data-wow-delay="0.2s" data-wow-duration="1000ms">
+                        <div class="row align-items-center">
+                            <div class="col-12 col-md-4">
+                                <div class="section-title">
+                                    <h2>내 분야 Hit 질문</h2>
+                                    <p>
+                                        Top 궁금해요 질문 모음
+                                    </p>
+                                </div>
+                                <div class="col-12">
+                                    <div class="category-block">
+                                        <div class="header">
+                                            <h4>IT 부문</h4>
+                                            <i class="fa fa-quora" style="color:#5672f9; font-size:20px"></i>
+                                        </div>
+                                        <ul class="category-list">
+                                            <li>
+                                                <a href="single-blog.html" style="text-decoration:none"> 자기 계발비는 어떻게 쓰나요?
+                                                    <span>93</span></a>
+                                            </li>
+                                            <li>
+                                                <a href="single-blog.html" style="text-decoration:none">휴양시설 이용 질문이요~! <span>233</span></a>
+                                            </li>
+                                            <li>
+                                                <a href="single-blog.html" style="text-decoration:none">데이터 분석 마라톤 강의 어때요?
+                                                    <span>183</span></a>
+                                            </li>
+                                            <li>
+                                                <a href="single-blog.html" style="text-decoration:none"> AIFB 공부 어떻게 해야하죠?
+                                                    <span>343</span></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-12 col-md-4">
+                                <div class="section-title">
+                                    <h2>내 분야 Hit 메뉴얼</h2>
+                                    <p>
+                                        추천 Best 메뉴얼
+                                    </p>
+                                </div>
+                                <div class="col-12">
+                                    <div class="category-block">
+                                        <div class="header">
+                                            <h4>IT 부문</h4>
+                                            <i class="fa fa-book" style="color:#5672f9; font-size:20px"></i>
+                                        </div>
+                                        <ul class="category-list">
+                                            <li>
+                                                <a href="single-blog.html" style="text-decoration:none">BM 게시글 작성 권한 요청 <span>93</span></a>
+                                            </li>
+                                            <li>
+                                                <a href="single-blog.html" style="text-decoration:none">담당자 변경 요청 <span>233</span></a>
+                                            </li>
+                                            <li>
+                                                <a href="single-blog.html" style="text-decoration:none">Ktalk 기능 개선 요청 <span>183</span></a>
+                                            </li>
+                                            <li>
+                                                <a href="single-blog.html" style="text-decoration:none">구매처 등록 매뉴얼 <span>343</span></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 플필 -->
+                            <div class="col-12 col-md-4">
+
+                                <div class="section-title">
+                                    <div class="widget user-dashboard-profile">
+                                        <!-- User Image -->
+                                        <div class="profile-thumb">
+                                            <img src="images/user/user-thumb.jpeg" alt="" class="circle" />
+                                        </div>
+                                        <!-- User Name -->
+                                        <h5 class="text-center">케이티 김</h5>
+                                        <p>IT부문 신입사원</p>
+                                        <a href="mypage.html" class="btn btn-main-sm" style="background: #5672f9;
+                                    color: #fff;">내 정보 수정</a>
+                                    </div>
+                                </div>
+
+                                <div class="col-12">
+                                    <div class="category-block" style="margin-top: -60px">
+                                        <div class="widget user-dashboard-menu">
+                                            <ul>
+                                                <li>
+                                                    <a href="mypage.html" style="text-decoration:none"><i class="fa fa-bookmark-o"></i>
+                                                        저장한 질문
+                                                        <span>5</span></a>
+                                                </li>
+                                                <li>
+                                                    <a href="mypage.html" style="text-decoration:none"><i class="fa fa-file-archive-o"></i>
+                                                        저장한 메뉴얼
+                                                        <span>12</span></a>
+                                                </li>
+                                                <li>
+                                                    <a href="mypage.html" style="text-decoration:none"><i class="fa fa-bolt"></i>
+                                                        내 포인트 <span>23</span></a>
+                                                </li>
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <!-- 플필 -->
+                        </div>
+
+                        <!-- Single Blog Area  -->
+
+                        <div class="container">
+                            <div class="col-sm">
+                                <div class="single-blog-area blog-style-2 mb-50 wow fadeInUp" data-wow-delay="0.3s" data-wow-duration="1000ms">
+                                    <div class="row" style="margin-top: 50px;">
+                                        <div class="col-12 col-md-4">
+                                            <div class="sidebar-widget-area">
+                                                <div class="section-title">
+                                                    <h3> 열혈 K-Boxer</h3>
+                                                    <p>
+                                                        K-box 사용자 랭킹
+                                                    </p>
+                                                </div>
+                                                <div class="category-block">
+                                                    <div class="widget-content">
+                                                        <!-- Single Blog Post -->
+                                                        <div class="single-blog-post d-flex align-items-center widget-post">
+                                                            <!-- Post Thumbnail -->
+                                                            <div class="post-thumbnail">
+                                                                <img src="img/blog-img/prof1.jpeg" alt="" />
+                                                            </div>
+                                                            <!-- Post Content -->
+                                                            <div class="post-content">
+                                                                <a href="#" class="post-tag">Enterprise 부문</a>
+                                                                <h4><a href="#" class="post-headline">뽀로로 님</a></h4>
+                                                                <div class="post-meta">
+                                                                    <p><a href="#">1500 points</a></p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <!-- Single Blog Post -->
+                                                        <div class="single-blog-post d-flex align-items-center widget-post">
+
+                                                            <!-- Post Thumbnail -->
+                                                            <div class="post-thumbnail">
+                                                                <img src="img/blog-img/prof2.jpeg" alt="" />
+                                                            </div>
+                                                            <!-- Post Content -->
+                                                            <div class="post-content">
+                                                                <a href="#" class="post-tag">네트워크 부문</a>
+                                                                <h4><a href="#" class="post-headline">케박캐 님</a></h4>
+                                                                <div class="post-meta">
+                                                                    <p><a href="#">1200 points</a></p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!-- Single Blog Post -->
+                                                        <div class="single-blog-post d-flex align-items-center widget-post">
+                                                            <!-- Post Thumbnail -->
+                                                            <div class="post-thumbnail">
+                                                                <img src="img/blog-img/prof3.jpeg" alt="" />
+                                                            </div>
+                                                            <!-- Post Content -->
+                                                            <div class="post-content">
+                                                                <a href="#" class="post-tag">IT 부문</a>
+                                                                <h4>
+                                                                    <a href="#" class="post-headline">배고픈댕댕 님</a>
+                                                                </h4>
+                                                                <div class="post-meta">
+                                                                    <p><a href="#">1000 points</a></p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-8">
+                                            <!-- Blog Content -->
+                                            <div class="sidebar-widget-area">
+                                                <!-- Hero Slides Area -->
+                                                <div class="section-title">
+                                                    <h3> KT 공지 </h3>
+                                                    <p>전사 공지 사항</p>
+                                                </div>
+                                                <div class="category-block">
+                                                    <div class="hero-slides owl-carousel">
+                                                        <!-- Single Slide -->
+                                                        <div class="single-hero-slide bg-img" style="background-image: url(images/products/1.png)">
+
+                                                        </div>
+
+                                                        <div class="single-hero-slide bg-img" style="background-image: url(images/products/2.png)">
+
+                                                        </div>
+                                                        <!-- Single Slide -->
+                                                        <div class="single-hero-slide bg-img" style="background-image: url(images/products/3.png)">
+
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="footer">
+                            <div>
+                                <p class="address">(주)케이티 경기도 성남시 분당구 불정로 90 (정자동 206번지)</p>
+                                <p>Copyright ⓒ2020 kt corp. All rights reserved.</p>
+                                <a class="policy-btn" onclick="javascript:goPrivacyPolicy();">개인정보처리방침</a>
+                            </div>
+                        </div>
+
+
+                        <!-- jQuery (Necessary for All JavaScript Plugins) -->
+                        <script src="js/jquery/jquery-2.2.4.min.js"></script>
+                        <!-- Popper js -->
+                        <script src="js/popper.min.js"></script>
+                        <!-- Bootstrap js -->
+                        <script src="js/bootstrap.min.js"></script>
+                        <!-- Plugins js -->
+                        <script src="js/plugins.js"></script>
+                        <!-- Active js -->
+                        <script src="js/active.js"></script>
+</body>
+
 </html>
