@@ -7,10 +7,11 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>[K-BOX] 게시물 상세</title>
+	<title>[K-Box] 게시물 상세</title>
 
 	<!-- FAVICON -->
-	<link href="img/favicon.png" rel="shortcut icon">
+    <link rel="icon" href="logos/kt-logo.png" />
+
 	<!-- PLUGINS CSS STYLE -->
 	<!-- <link href="plugins/jquery-ui/jquery-ui.min.css" rel="stylesheet"> -->
 	<!-- Bootstrap -->
@@ -50,93 +51,99 @@
 </head>
 
 <body class="body-wrapper">
-	<!-- ##### Header Area Start ##### -->
+
 	<header class="header-area">
-		<!-- Top Header Area -->
-		<div class="top-header">
-			<div class="container h-100">
-				<div class="row h-100 align-items-center">
-					<div class="col-12 col-sm-8">
-						<div class="breaking-news-area">
-							<div id="breakingNewsTicker" class="ticker">
-								<ul>
-									<li><a href="#">K-Box</a></li>
-									<li><a href="#">KT 지식관 포털</a></li>
-								</ul>
-							</div>
-						</div>
-					</div>
-					<div class="col-12 col-sm-4">
-						<div class="subscribe-btn" style="display:grid; justify-content: end">
-							<a href="#" class="btn subscribe-btn" data-toggle="modal" data-target="#subsModal">마이페이지</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
+        <!-- Top Header Area -->
+        <div class="top-header">
+            <div class="container h-100">
+                <div class="row h-100 align-items-center" style="display: flex;
+          flex-direction: column;">
+                    <div class="col-12 col-sm-8">
+                        <div class="breaking-news-area">
+                            <div id="breakingNewsTicker" class="ticker" style="height: 25px; margin-top: 30px;">
+                                <ul>
+                                    <li><a href="#">K-Box</a></li>
+                                    <li><a href="#">KT 지식관 포털</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
 
-		<!-- Logo Area -->
-		<div class="logo-area text-center">
-			<div class="container h-100">
-				<div class="row h-100 align-items-center">
-					<div class="col-12">
-						<!-- <a href="index.html" class="original-logo"><img src="img/core-img/kbox.jpeg" alt=""></a> -->
-						<h1>K-Box</h1>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="original-nav-area" id="stickyNav">
-			<nav class="navbar sticky-top navbar-expand-md navbar-dark bg-dark">
-				<div class="container-fluid">
-					<a href="#" class="navbar-brand">
-						<img src="logos/kt-logo2.png" height="40" alt="KT" style="width:50px; height: 40;" />
-					</a>
-					<button type="button" class="navbar-toggler" data-bs-toggle="collapse"
-						data-bs-target="#navbarCollapse">
-						<span class="navbar-toggler-icon"></span>
-					</button>
-					<div class="collapse navbar-collapse" id="navbarCollapse">
-						<div class="navbar-nav">
-							<a href="#" class="nav-item nav-link">Home</a>
-							<!--<a href="#" class="nav-item nav-link">About</a>-->
-							<div class="nav-item dropdown">
-								<a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">About</a>
-								<div class="dropdown-menu">
-									<a href="#" class="dropdown-item">Company</a>
-									<a href="#" class="dropdown-item">Business</a>
-									<a href="#" class="dropdown-item">CEO</a>
-								</div>
-							</div>
-						</div>
+                </div>
+            </div>
+        </div>
+        <!-- 네비바 -->
+        <div class="original-nav-area" id="stickyNav">
+            <nav class="navbar sticky-top navbar-expand-md navbar-dark bg-dark">
+                <div class="container-fluid">
+                    <a href="#" class="navbar-brand">
+                        <img src="logos/kt-logo2.png" height="40" alt="KT" style="width:50px; height: 40;" />
+                    </a>
+                    <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarCollapse">
+                        <div class="navbar-nav">
+                            <div class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">메뉴얼</a>
+                                <div class="dropdown-menu">
+                                    <a href="#" class="dropdown-item">Customer 부문</a>
+                                    <a href="#" class="dropdown-item">Enterprise 부문</a>
+                                    <a href="#" class="dropdown-item">AI/DX 융합사업 부문</a>
+                                    <a href="#" class="dropdown-item">네트워크 부문</a>
+                                    <a href="#" class="dropdown-item">IT 부문</a>
+                                    <a href="#" class="dropdown-item">경영 부문</a>
+                                    <a href="#" class="dropdown-item">지역 본부</a>
+                                </div>
+                            </div>
 
-						<div class="navbar-nav ms-auto">
+                            <div class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">QnA 게시판</a>
+                                <div class="dropdown-menu">
+                                    <a href="#" class="dropdown-item">Customer 부문</a>
+                                    <a href="#" class="dropdown-item">Enterprise 부문</a>
+                                    <a href="#" class="dropdown-item">AI/DX 융합사업 부문</a>
+                                    <a href="#" class="dropdown-item">네트워크 부문</a>
+                                    <a href="#" class="dropdown-item">IT 부문</a>
+                                    <a href="#" class="dropdown-item">경영 부문</a>
+                                    <a href="#" class="dropdown-item">지역 본부</a>
+                                </div>
+                            </div>
 
-							<div class="subscribe-btn">
-								<a href="#" class="btn subscribe-btn" data-toggle="modal"
-									data-target="#subsModal">질문하기</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</nav>
-		</div>
-		</div>
-		</div>
-		</div>
-	</header>
-	<!-- ##### Header Area End ##### -->
-	<!--=================================
-=            Single Blog            =
-==================================-->
+                            <a href="mypage.html" class="nav-item nav-link">마이 페이지</a>
+                        </div>
 
+                        <div id="search-wrapper" class="search-expanded">
+                            <form action="#">
+                                <input type="text" id="search" placeholder="궁금한 내용을 검색해보세요!">
+                                <div id="close-icon" style="display: block;" class="closing">
+
+                                </div>
+                                <input class="d-none" type="submit" value="">
+                            </form>
+                        </div>
+
+                        <!-- <div class="navbar-nav ms-auto"> -->
+
+                        <div class="write-btn" style="margin-left:auto">
+                            <a href="blog-post.html" class="btn write-btn" style="font-size:15px">글쓰기</a>
+                            <!-- </div> -->
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        </div>
+        </div>
+        </div>
+    </header>
 
 	<section class="blog single-blog section">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-10 offset-md-1 col-lg-9 offset-lg-0">
 					<article class="single-post">
-						<h3>Donec id dolor in erat imperdiet.</h3>
+						<h3>연금 저축 보험 가입 가이드</h3>
 						<ul class="list-inline">
 							<li class="list-inline-item">by <a href="">Admin</a></li>
 							<li class="list-inline-item">Nov 22, 2016</li>
@@ -181,7 +188,7 @@
 								<div class="be-comment-content">
 
 									<span class="be-comment-name">
-										<a href="blog-detail-2.html">Ravi Sah</a>
+										<a href="blog-detail-2.html">분당동 불주먹</a>
 									</span>
 									<span class="be-comment-time">
 										<i class="fa fa-clock-o"></i>
@@ -189,9 +196,7 @@
 									</span>
 
 									<p class="be-comment-text">
-										Pellentesque gravida tristique ultrices.
-										Sed blandit varius mauris, vel volutpat urna hendrerit id.
-										Curabitur rutrum dolor gravida turpis tristique efficitur.
+										유익한 정보 감사드립니다! :)
 									</p>
 								</div>
 							</div>
@@ -204,17 +209,14 @@
 								</div>
 								<div class="be-comment-content">
 									<span class="be-comment-name">
-										<a href="blog-detail-2.html">Phoenix, the Creative Studio</a>
+										<a href="blog-detail-2.html">상남자는 풀악셀</a>
 									</span>
 									<span class="be-comment-time">
 										<i class="fa fa-clock-o"></i>
 										May 27, 2015 at 3:14am
 									</span>
 									<p class="be-comment-text">
-										Nunc ornare sed dolor sed mattis. In scelerisque dui a arcu mattis, at maximus
-										eros commodo. Cras magna nunc, cursus lobortis luctus at, sollicitudin vel
-										neque. Duis eleifend lorem non ant. Proin ut ornare lectus, vel eleifend est.
-										Fusce hendrerit dui in turpis tristique blandit.
+										오! 저도 잘 알지 못 했던 부분인데, 자세히 알려주셔서 감사드립니다~
 									</p>
 								</div>
 							</div>
@@ -227,45 +229,44 @@
 								</div>
 								<div class="be-comment-content">
 									<span class="be-comment-name">
-										<a href="blog-detail-2.html">Cüneyt ŞEN</a>
+										<a href="blog-detail-2.html">반갑동 잡채</a>
 									</span>
 									<span class="be-comment-time">
 										<i class="fa fa-clock-o"></i>
 										May 27, 2015 at 3:14am
 									</span>
 									<p class="be-comment-text">
-										Cras magna nunc, cursus lobortis luctus at, sollicitudin vel neque. Duis
-										eleifend lorem non ant
+										최고예요!!!!
 									</p>
 								</div>
 							</div>
 						</div>
 					</div>
 					<div class="block comment">
-						<h4>Leave A Comment</h4>
+						<h4>댓글 작성하기</h4>
 						<form action="#">
 							<!-- Message -->
 							<div class="form-group mb-30">
-								<label for="message">Message</label>
+								<label for="message">내용</label>
 								<textarea class="form-control" id="message" rows="8"></textarea>
 							</div>
 							<div class="row">
 								<div class="col-sm-12 col-md-6">
 									<!-- Name -->
 									<div class="form-group mb-30">
-										<label for="name">Nickname</label>
+										<label for="name">닉네임</label>
 										<input type="text" class="form-control" id="name">
 									</div>
 								</div>
 								<div class="col-sm-12 col-md-6">
 									<!-- Email -->
 									<div class="form-group mb-30">
-										<label for="email">Email</label>
+										<label for="email">이메일 주소</label>
 										<input type="email" class="form-control" id="email">
 									</div>
 								</div>
 							</div>
-							<button class="btn btn-transparent">Leave Comment</button>
+							<button class="btn btn-transparent">작성하기</button>
 						</form>
 					</div>
 				</div>
@@ -312,24 +313,29 @@
 		</div>
 	</section>
 
+	<div id="footer" class="container">
+        <hr/>
+        <div style="margin-bottom: 50px;">
+            <p class="address">(주)케이티 경기도 성남시 분당구 불정로 90 (정자동 206번지)</p>
+            <p>Copyright ⓒ2020 kt corp. All rights reserved.</p>
+            <a class="policy-btn" onclick="javascript:goPrivacyPolicy();">개인정보처리방침</a>
+        </div>
+    </div>
 
-	<!-- JAVASCRIPTS -->
-	<script src="plugins/jQuery/jquery.min.js"></script>
-	<script src="plugins/bootstrap/js/popper.min.js"></script>
-	<script src="plugins/bootstrap/js/bootstrap.min.js"></script>
-	<script src="plugins/bootstrap/js/bootstrap-slider.js"></script>
-	<!-- tether js -->
-	<script src="plugins/tether/js/tether.min.js"></script>
-	<script src="plugins/raty/jquery.raty-fa.js"></script>
-	<script src="plugins/slick-carousel/slick/slick.min.js"></script>
-	<script src="plugins/jquery-nice-select/js/jquery.nice-select.min.js"></script>
-	<script src="plugins/fancybox/jquery.fancybox.pack.js"></script>
-	<script src="plugins/smoothscroll/SmoothScroll.min.js"></script>
-	<!-- google map -->
-	<script
-		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCcABaamniA6OL5YvYSpB3pFMNrXwXnLwU&libraries=places"></script>
-	<script src="plugins/google-map/gmap.js"></script>
-	<script src="js/script.js"></script>
+
+    <!-- Start Script -->
+
+    <!-- jQuery (Necessary for All JavaScript Plugins) -->
+    <script src="js/jquery/jquery-2.2.4.min.js"></script>
+    <!-- Popper js -->
+    <script src="js/popper.min.js"></script>
+    <!-- Bootstrap js -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Plugins js -->
+    <script src="js/plugins.js"></script>
+    <!-- Active js -->
+    <script src="js/active.js"></script>
+    <!-- End Script -->
 
 </body>
 
