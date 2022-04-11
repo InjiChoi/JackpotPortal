@@ -2,16 +2,12 @@
 <html lang="en">
 
 <head>
-    <title>[K-BOX] 질문 작성</title>
+    <title>[K-Box] 질문 작성</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="apple-touch-icon" href="assets/img/apple-icon.png">
-    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
-
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/templatemo.css">
-    <link rel="stylesheet" href="assets/css/custom.css">
+    <link rel="icon" href="logos/kt-logo.png" />
 
     <!-- Load fonts style after rendering the layout styles -->
     <link rel="stylesheet"
@@ -43,15 +39,15 @@ https://templatemo.com/tm-559-zay-shop
 </head>
 
 <body>
-    <!-- ##### Header Area Start ##### -->
     <header class="header-area">
         <!-- Top Header Area -->
         <div class="top-header">
             <div class="container h-100">
-                <div class="row h-100 align-items-center">
+                <div class="row h-100 align-items-center" style="display: flex;
+          flex-direction: column;">
                     <div class="col-12 col-sm-8">
                         <div class="breaking-news-area">
-                            <div id="breakingNewsTicker" class="ticker">
+                            <div id="breakingNewsTicker" class="ticker" style="height: 25px; margin-top: 30px;">
                                 <ul>
                                     <li><a href="#">K-Box</a></li>
                                     <li><a href="#">KT 지식관 포털</a></li>
@@ -59,56 +55,66 @@ https://templatemo.com/tm-559-zay-shop
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-sm-4">
-                        <div class="subscribe-btn" style="display:grid; justify-content: end">
-                            <a href="#" class="btn subscribe-btn" data-toggle="modal" data-target="#subsModal">마이페이지</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
 
-        <!-- Logo Area -->
-        <div class="logo-area text-center">
-            <div class="container h-100">
-                <div class="row h-100 align-items-center">
-                    <div class="col-12">
-                        <!-- <a href="index.html" class="original-logo"><img src="img/core-img/kbox.jpeg" alt=""></a> -->
-                        <h1>K-Box</h1>
-                    </div>
                 </div>
             </div>
         </div>
+        <!-- 네비바 -->
         <div class="original-nav-area" id="stickyNav">
             <nav class="navbar sticky-top navbar-expand-md navbar-dark bg-dark">
                 <div class="container-fluid">
                     <a href="#" class="navbar-brand">
                         <img src="logos/kt-logo2.png" height="40" alt="KT" style="width:50px; height: 40;" />
                     </a>
-                    <button type="button" class="navbar-toggler" data-bs-toggle="collapse"
-                        data-bs-target="#navbarCollapse">
+                    <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarCollapse">
                         <div class="navbar-nav">
-                            <a href="#" class="nav-item nav-link">Home</a>
-                            <!--<a href="#" class="nav-item nav-link">About</a>-->
                             <div class="nav-item dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">About</a>
+                                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">메뉴얼</a>
                                 <div class="dropdown-menu">
-                                    <a href="#" class="dropdown-item">Company</a>
-                                    <a href="#" class="dropdown-item">Business</a>
-                                    <a href="#" class="dropdown-item">CEO</a>
+                                    <a href="#" class="dropdown-item">Customer 부문</a>
+                                    <a href="#" class="dropdown-item">Enterprise 부문</a>
+                                    <a href="#" class="dropdown-item">AI/DX 융합사업 부문</a>
+                                    <a href="#" class="dropdown-item">네트워크 부문</a>
+                                    <a href="#" class="dropdown-item">IT 부문</a>
+                                    <a href="#" class="dropdown-item">경영 부문</a>
+                                    <a href="#" class="dropdown-item">지역 본부</a>
                                 </div>
                             </div>
+
+                            <div class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">QnA 게시판</a>
+                                <div class="dropdown-menu">
+                                    <a href="#" class="dropdown-item">Customer 부문</a>
+                                    <a href="#" class="dropdown-item">Enterprise 부문</a>
+                                    <a href="#" class="dropdown-item">AI/DX 융합사업 부문</a>
+                                    <a href="#" class="dropdown-item">네트워크 부문</a>
+                                    <a href="#" class="dropdown-item">IT 부문</a>
+                                    <a href="#" class="dropdown-item">경영 부문</a>
+                                    <a href="#" class="dropdown-item">지역 본부</a>
+                                </div>
+                            </div>
+
+                            <a href="mypage.html" class="nav-item nav-link">마이 페이지</a>
                         </div>
 
-                        <div class="navbar-nav ms-auto">
+                        <div id="search-wrapper" class="search-expanded">
+                            <form action="#">
+                                <input type="text" id="search" placeholder="궁금한 내용을 검색해보세요!">
+                                <div id="close-icon" style="display: block;" class="closing">
 
-                            <div class="subscribe-btn">
-                                <a href="#" class="btn subscribe-btn" data-toggle="modal"
-                                    data-target="#subsModal">질문하기</a>
-                            </div>
+                                </div>
+                                <input class="d-none" type="submit" value="">
+                            </form>
+                        </div>
+
+                        <!-- <div class="navbar-nav ms-auto"> -->
+
+                        <div class="write-btn" style="margin-left:auto">
+                            <a href="blog-post.html" class="btn write-btn" style="font-size:15px">글쓰기</a>
+                            <!-- </div> -->
                         </div>
                     </div>
                 </div>
@@ -118,37 +124,27 @@ https://templatemo.com/tm-559-zay-shop
         </div>
         </div>
     </header>
-    <!-- ##### Header Area End ##### -->
-    <div class="row text-center pt-5 pb-3">
-        <div class="col-lg-6 m-auto">
-            <h1 class="h1">질문 (Q&A) 작성</h1>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                Lorem ipsum dolor sit amet.
-            </p>
-        </div>
-    </div>
     <!-- Start Contact -->
     <div class="container py-5">
         <div class="row py-5">
             <form class="col-md-9 m-auto" method="post" role="form">
                 <div class="row">
                     <div class="form-group col-md-6 mb-3">
-                        <label for="inputname">Nickname</label>
+                        <label for="inputname">닉네임</label>
                         <input type="text" class="form-control mt-1" id="name" name="name" placeholder="Name">
                     </div>
                     <div class="form-group col-md-6 mb-3">
-                        <label for="inputemail">Email</label>
+                        <label for="inputemail">이메일 주소</label>
                         <input type="email" class="form-control mt-1" id="email" name="email" placeholder="Email">
                     </div>
                 </div>
                 <div class="mb-3">
-                    <label for="inputsubject">Hashtag</label>
+                    <label for="inputsubject">해시태그</label>
                     <input type="text" class="form-control mt-1" id="subject" name="subject"
                         placeholder="#AI, #Big Data, #Cloud">
                 </div>
                 <div class="mb-3">
-                    <label for="inputmessage">Content</label>
+                    <label for="inputmessage">내용</label>
                     <textarea class="form-control mt-1" id="message" name="message" rows="8"></textarea>
                 </div>
                 <div class="row">
@@ -161,12 +157,32 @@ https://templatemo.com/tm-559-zay-shop
     </div>
     <!-- End Contact -->
 
+    <div id="footer" class="container">
+        <hr/>
+        <div style="margin-bottom: 50px;">
+            <p class="address">(주)케이티 경기도 성남시 분당구 불정로 90 (정자동 206번지)</p>
+            <p>Copyright ⓒ2020 kt corp. All rights reserved.</p>
+            <a class="policy-btn" onclick="javascript:goPrivacyPolicy();">개인정보처리방침</a>
+        </div>
+    </div>
+
     <!-- Start Script -->
     <script src="assets/js/jquery-1.11.0.min.js"></script>
     <script src="assets/js/jquery-migrate-1.2.1.min.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/templatemo.js"></script>
     <script src="assets/js/custom.js"></script>
+
+    <!-- jQuery (Necessary for All JavaScript Plugins) -->
+    <script src="js/jquery/jquery-2.2.4.min.js"></script>
+    <!-- Popper js -->
+    <script src="js/popper.min.js"></script>
+    <!-- Bootstrap js -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Plugins js -->
+    <script src="js/plugins.js"></script>
+    <!-- Active js -->
+    <script src="js/active.js"></script>
     <!-- End Script -->
 </body>
 
