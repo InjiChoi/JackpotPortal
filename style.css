@@ -1,15 +1,3 @@
-/* [ -- Master Stylesheet -- ]
-
-------------------------------------------------------
-:: Template Name: Original - Lifestyle Blog Template
-:: Author: Colorlib
-:: Author URL: https://colorlib.com
-:: Version: 1.0.0
-:: Created: April 3, 2018
-:: Last Updated: April 3, 2018
--------------------------------------------------- */
-/* :: Import Fonts */
-/* @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700"); */
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500&display=swap");
 @import url(css/bootstrap.min.css);
 @import url(css/classy-nav.css);
@@ -230,9 +218,11 @@ img {
 }
 
 .bg-img {
+  height: 540px;
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
+  border-radius: 25px;
 }
 
 .bg-transparent {
@@ -383,7 +373,8 @@ img {
   transition-duration: 500ms;
 }
 .header-area .top-header {
-  height: 65px;
+  height: 70px;
+  background-color: #212529;
 }
 @media only screen and (max-width: 767px) {
   .header-area .top-header {
@@ -439,27 +430,27 @@ img {
   }
 }
 .header-area .original-nav-area {
-  height: 100px;
+  height: 80px;
 }
 @media only screen and (max-width: 767px) {
   .header-area .original-nav-area {
     height: 70px;
   }
 }
-.header-area .original-nav-area .subscribe-btn a {
+.header-area .original-nav-area .write-btn a {
   display: inline-block;
   min-width: 140px;
   height: 40px;
-  background-color: #0d0d0d;
+  background-color: #5672f9;
   color: #ffffff;
-  border-radius: 0;
+  border-radius: 20px;
   font-size: 12px;
   text-transform: uppercase;
   line-height: 40px;
   padding: 0;
 }
-.header-area .original-nav-area .subscribe-btn a:hover,
-.header-area .original-nav-area .subscribe-btn a:focus {
+.header-area .original-nav-area .write-btn a:hover,
+.header-area .original-nav-area .write-btn a:focus {
   background-color: #30336b;
 }
 .header-area .original-nav-area .classynav ul li a {
@@ -500,7 +491,7 @@ img {
 
 #breakingNewsTicker.ticker {
   width: 100%;
-  text-align: left;
+  text-align: center;
   position: relative;
   overflow: hidden;
 }
@@ -513,12 +504,13 @@ img {
   width: 100%;
 }
 #breakingNewsTicker.ticker ul li a {
-  color: #000000;
-  font-size: 14px;
+  color: white;
+  font-size: 20px;
   text-transform: uppercase;
+  text-decoration: none;
 }
 #breakingNewsTicker.ticker ul li a:hover {
-  color: #30336b;
+  color: gray;
 }
 
 .modal-backdrop.show {
@@ -618,7 +610,7 @@ img {
   }
 }
 .hero-slides .single-hero-slide .slide-content {
-  display: none;
+  display: inline;
 }
 .hero-slides .single-hero-slide .slide-content .post-tag {
   margin-bottom: 15px;
@@ -678,8 +670,8 @@ img {
   color: #ffffff;
   line-height: 42px;
   border-radius: 2px;
-  -webkit-transition-duration: 500ms;
-  transition-duration: 500ms;
+  -webkit-transition-duration: 300ms;
+  transition-duration: 300ms;
 }
 .hero-slides .owl-nav .owl-prev:hover,
 .hero-slides .owl-nav .owl-prev:focus,
@@ -916,7 +908,7 @@ img {
   transition-duration: 500ms;
 }
 .sidebar-widget-area .newsletterForm button[type="submit"]:hover {
-  background-color: #30336b;
+  background-color: #c5c5c5;
 }
 .sidebar-widget-area .title {
   font-size: 18px;
@@ -978,18 +970,19 @@ img {
 .sidebar-widget-area .tags a {
   display: block;
   padding: 0 35px;
-  border: 1px solid #c5c5c5;
+  border: 2px solid #c5c5c5;
   font-size: 12px;
   color: #000000;
   height: 45px;
   line-height: 43px;
   margin: 5px;
+  border-radius: 25px;
 }
 .sidebar-widget-area .tags a:hover,
 .sidebar-widget-area .tags a:focus {
-  border: 1px solid #30336b;
+  border: 1px solid#c5c5c5;
   color: #ffffff;
-  background-color: #30336b;
+  background-color: #c5c5c5;
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .sidebar-widget-area .tags a {
@@ -1388,7 +1381,7 @@ textarea:focus ~ .highlight {
   display: inline-block;
   position: relative;
   right: 7px;
-  margin-left: 50px;
+  margin-left: 145px;
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   #search-wrapper {
@@ -1425,43 +1418,22 @@ textarea:focus ~ .highlight {
   -webkit-animation: cross-2-in 0.25s linear 0.2s forwards;
   animation: cross-2-in 0.25s linear 0.2s forwards;
 }
-#search-wrapper.search-expanded:after {
-  -webkit-animation: lens-out 0.5s linear 1 forwards;
-  animation: lens-out 0.5s linear 1 forwards;
-}
-#search-wrapper:after {
-  position: absolute;
-  bottom: 3px;
-  right: -9px;
-  display: block;
-  content: "";
-  width: 14px;
-  height: 2px;
-  background-color: white;
-  -webkit-transform: rotate(45deg) scaleX(0);
-  transform: rotate(45deg) scaleX(0);
-  transform-origin: 0 50%;
-  -webkit-animation: lens-in 0.6s linear 0.9s forwards;
-  animation: lens-in 0.6s linear 0.9s forwards;
-}
+
 #search-wrapper #search {
-  background: none;
+  background: white;
   border: 2px solid;
   border-color: white;
   outline: none;
-  padding: 0 9px;
   border-radius: 1000px;
-  width: 0;
   transition: all 0.3s 0.6s;
   font-size: 12px;
+  width: 500px;
+  padding: 7px 15px;
 }
 #search-wrapper #search::-webkit-input-placeholder {
   color: rgba(0, 0, 0, 0.6);
 }
-#search-wrapper #search:focus {
-  width: 270px;
-  padding: 7px 15px;
-}
+
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   #search-wrapper #search:focus {
     width: 170px;
@@ -1904,15 +1876,17 @@ textarea:focus ~ .highlight {
 
 .product-item {
   box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.1);
-  margin-bottom: 30px;
+  /* margin-bottom: 30px; */
 }
 
 .product-item .card {
   border: none;
+  border-radius: 20px;
 }
 
 .product-item .card .card-body {
-  padding: 20px;
+  margin: 30px;
+  padding: 7%;
 }
 
 .product-item .card .card-body .card-title {
