@@ -352,13 +352,13 @@ img {
   line-height: 59px;
   text-transform: uppercase;
   letter-spacing: 3px;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Noto Sans KR", sans-serif;
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
   color: #000000;
 }
 .original-btn:hover,
 .original-btn:focus {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Noto Sans KR", sans-serif;
   color: #ffffff;
   border-color: #30336b;
   background-color: #30336b;
@@ -541,7 +541,7 @@ img {
   height: 60px;
   border: 1px solid #787878;
   font-size: 14px;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Noto Sans KR", sans-serif;
   -webkit-transition-duration: 500ms;
   transition-duration: 500ms;
   font-style: italic;
@@ -716,7 +716,7 @@ img {
 }
 .single-blog-area .single-blog-thumbnail .post-date a span {
   display: block;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Noto Sans KR", sans-serif;
   font-size: 11px;
   color: #878787;
 }
@@ -871,7 +871,7 @@ img {
   border-bottom: 1px solid #bbbec1;
   font-size: 12px;
   font-style: italic;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Noto Sans KR", sans-serif;
   color: #bbbec1;
   -webkit-transition-duration: 500ms;
   transition-duration: 500ms;
@@ -891,7 +891,7 @@ img {
   height: 40px;
   border: 1px solid #787878;
   font-size: 13px;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Noto Sans KR", sans-serif;
   -webkit-transition-duration: 500ms;
   transition-duration: 500ms;
   font-style: italic;
@@ -951,7 +951,7 @@ img {
 .sidebar-widget-area .single-blog-post .post-content .post-meta p a {
   font-size: 11px;
   color: #878787;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Noto Sans KR", sans-serif;
   text-transform: uppercase;
 }
 .sidebar-widget-area .single-blog-post .post-content .post-meta p a:hover,
@@ -1106,11 +1106,11 @@ img {
 .blog-post-author .author-info p {
   line-height: 2;
   margin-bottom: 0;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Noto Sans KR", sans-serif;
 }
 
 .single-blog-wrapper .single-blog-area .single-blog-content p {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Noto Sans KR", sans-serif;
 }
 
 .comment_area {
@@ -1163,13 +1163,13 @@ img {
 .comment_area .comment-content .comment-meta p {
   margin-bottom: 15px;
   font-size: 14px;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Noto Sans KR", sans-serif;
   line-height: 2;
 }
 .comment_area .comment-content .comment-meta .comment-reply {
   font-size: 11px;
   color: #000000;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Noto Sans KR", sans-serif;
   text-transform: uppercase;
 }
 .comment_area .single_comment_area {
@@ -1863,7 +1863,7 @@ textarea:focus ~ .highlight {
   right: 0;
   width: 40px;
   height: 5px;
-  background-color: #5672f9;
+  background-color: rgb(236, 88, 88);
 }
 
 .section-title p {
@@ -2292,4 +2292,152 @@ textarea:focus ~ .highlight {
 .btn-main-sm {
   padding: 6px 20px;
   font-size: 12px;
+}
+
+/* 팝업 */
+.section_layer {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1250;
+  width: 100%;
+  height: 100%;
+}
+
+.section_layer .popup {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.layer_promotion_heavyAnswerer {
+  z-index: 10;
+  width: 300px;
+  padding-top: 80px;
+  border: 0 none;
+  background-color: transparent;
+  text-align: center;
+}
+
+.section_layer .dimmed {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: #000;
+  opacity: 0.75;
+  filter: alpha(opacity=75);
+}
+
+.popup {
+  position: absolute;
+  border: 1px solid #888;
+  background-color: #fff;
+}
+
+.popup .ico_close_layer {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 36px;
+  height: 36px;
+  padding: 10px 19px;
+  box-sizing: border-box;
+}
+
+.popup .layer_promotion__hide_checkbox {
+  margin-top: 16px;
+  font-weight: 800;
+}
+
+.popup .layer_promotion__hide_checkbox input[type="checkbox"] {
+  position: absolute;
+  overflow: hidden;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  opacity: 0;
+}
+
+input[type="checkbox"] {
+  -webkit-appearance: checkbox;
+}
+
+.popup .layer_promotion__hide_checkbox label:before {
+  float: left;
+  width: 15px;
+  height: 15px;
+  margin-right: 6px;
+  border: 1px solid #fff;
+  border-radius: 2px;
+  box-sizing: border-box;
+  content: "";
+}
+
+.popup
+  .layer_promotion__hide_checkbox
+  input[type="checkbox"]:checked
+  + label:after {
+  position: absolute;
+  top: 10px;
+  left: 29px;
+  width: 4px;
+  height: 15px;
+  content: "";
+  border-right: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.popup .layer_promotion__hide_checkbox label {
+  display: inline-block;
+  position: relative;
+  padding: 15px 20px;
+  vertical-align: top;
+  color: white;
+  font-size: 12px;
+  line-height: 16px;
+  background-color: #5672f9;
+  border-radius: 22px;
+  box-sizing: border-box;
+}
+
+.popup .ico_close_layer:before {
+  -ms-transform: translate(-50%, -50%) rotate(45deg);
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.popup .ico_close_layer:before,
+.popup .ico_close_layer:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 1px;
+  height: 15px;
+  background-color: #fff;
+}
+
+.popup .ico_close_layer:after {
+  -ms-transform: translate(-50%, -50%) rotate(135deg);
+  transform: translate(-50%, -50%) rotate(135deg);
+}
+
+.popup .ico_close_layer:before,
+.popup .ico_close_layer:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 1px;
+  height: 15px;
+  background-color: #fff;
 }
