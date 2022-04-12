@@ -113,7 +113,7 @@ https://templatemo.com/tm-559-zay-shop
                         <!-- <div class="navbar-nav ms-auto"> -->
 
                         <div class="write-btn" style="margin-left:auto">
-                            <a href="blog-post.html" class="btn write-btn" style="font-size:15px; background-color: rgb(136, 41, 41);">글쓰기</a>
+                            <a href="blog-post.html" class="btn write-btn" style="font-size:15px; background-color: rgb(236, 88, 88);">글쓰기</a>
                             <!-- </div> -->
                         </div>
                     </div>
@@ -124,19 +124,27 @@ https://templatemo.com/tm-559-zay-shop
         </div>
         </div>
     </header>
+    <div class="container pt-5">
+        <h2 class ="text-center">게시물 작성하기</h2>
+    </div>
     <!-- Start Contact -->
-    <div class="container py-5">
+    <div class="container pb-5">
         <div class="row py-5">
             <form class="col-md-9 m-auto" method="post" role="form">
                 <div class="row">
                     <div class="form-group col-md-6 mb-3">
                         <label for="inputname">닉네임</label>
-                        <input type="text" class="form-control mt-1" id="name" name="name" placeholder="Name">
+                        <input type="text" class="form-control mt-1" id="name" name="name" placeholder="Nickname">
                     </div>
                     <div class="form-group col-md-6 mb-3">
                         <label for="inputemail">이메일 주소</label>
                         <input type="email" class="form-control mt-1" id="email" name="email" placeholder="Email">
                     </div>
+                </div>
+                <div class="mb-3">
+                    <label for="inputsubject">제목</label>
+                    <input type="text" class="form-control mt-1" id="subject" name="subject"
+                        placeholder="Title">
                 </div>
                 <div class="mb-3">
                     <label for="inputsubject">해시태그</label>
@@ -149,7 +157,7 @@ https://templatemo.com/tm-559-zay-shop
                 </div>
                 <div class="row">
                     <div class="col text-center mt-2">
-                        <button type="submit" class="btn btn-dark btn-lg px-3">작성하기</button>
+                        <button type="submit" class="btn btn-dark btn-lg px-3" onclick="submitFunction()">작성하기</button>
                     </div>
                 </div>
             </form>
@@ -184,6 +192,11 @@ https://templatemo.com/tm-559-zay-shop
     <!-- Active js -->
     <script src="js/active.js"></script>
     <!-- End Script -->
+    <script>
+        function submitFunction() {
+            alert("게시물 작성이 완료되었습니다.");
+        }
+    </script>
 </body>
 
 </html>
