@@ -24,6 +24,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500&display=swap" rel="stylesheet" />
+    <script>
+        function closepop() {
+            document.getElementById("eventPopupLayer").style.display = "none";
+        }
+    </script>
+
 </head>
 
 <body>
@@ -34,6 +40,35 @@
             <div id="original-load"></div>
         </div>
     </div>
+
+    <div class="section_layer _close" id="eventPopupLayer" style="display: block;">
+
+        <div class="popup layer_promotion_heavyAnswerer _layer" style="border-radius: 20px; background-color: whitesmoke">
+            <div class="layer_promotion_heavyAnswerer_inner">
+                <div class="post-thumbnail">
+                    <img src="img/케바기.png" alt="" width="100px" />
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <p class="blind"></p>
+                        <p class="blind" style="font-size:18px; color:black">K-Box 활동하고 보상 받을 사람? </p>
+                        <p class="blind">적극적인 활동으로 <strong>기프티쇼</strong>받아가세요!</p>
+                    </div>
+                </div>
+                <a href="javascript:closepop();" class="ico_close_layer _close" style="background-color:rgb(236, 88, 88); border-radius: 10px;"><span
+                        class="blind"></span></a>
+            </div>
+            <div class="layer_promotion__sorting">
+                <div class="layer_promotion__hide_checkbox">
+                    <input type="checkbox" id="layer_promotion_heavyAnswerer_today" class="_hideWeek">
+                    <label for="layer_promotion_heavyAnswerer_today" style="background-color: rgb(236, 88, 88)">7일간 보지 않기</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="dimmed _close"></div>
+    </div>
+
 
     <!-- 헤더 -->
     <header class="header-area">
@@ -46,8 +81,8 @@
                         <div class="breaking-news-area">
                             <div id="breakingNewsTicker" class="ticker" style="height: 25px; margin-top: 30px;">
                                 <ul>
-                                    <li><a href="#">K-Box</a></li>
-                                    <li><a href="#">KT 지식관 포털</a></li>
+                                    <li><a href="#"> K - Box</a></li>
+                                    <li><a href="#">지식관 포털</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -60,7 +95,7 @@
         <div class="original-nav-area" id="stickyNav">
             <nav class="navbar sticky-top navbar-expand-md navbar-dark bg-dark">
                 <div class="container-fluid">
-                    <a href="index.html" class="navbar-brand">
+                    <a href="#" class="navbar-brand">
                         <img src="logos/kt-logo2.png" height="40" alt="KT" style="width:50px; height: 40;" />
                     </a>
                     <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
@@ -69,7 +104,7 @@
                     <div class="collapse navbar-collapse" id="navbarCollapse">
                         <div class="navbar-nav">
                             <div class="nav-item dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">매뉴얼</a>
+                                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">메뉴얼</a>
                                 <div class="dropdown-menu">
                                     <a href="#" class="dropdown-item">Customer 부문</a>
                                     <a href="#" class="dropdown-item">Enterprise 부문</a>
@@ -110,8 +145,7 @@
                         <!-- <div class="navbar-nav ms-auto"> -->
 
                         <div class="write-btn" style="margin-left:auto">
-                            <a href="blog-post.html" class="btn write-btn" style="font-size:15px; background-color: rgb(136, 41, 41);">글쓰기</a>
-                            <!-- </div> -->
+                            <a href="blog-post.html" class="btn write-btn" style="font-size:15px; background-color:rgb(236, 88, 88);">글쓰기</a>
                         </div>
                     </div>
                 </div>
@@ -137,7 +171,7 @@
                     <li><a href="#" style="text-decoration:none">신사업개발</a></li>
                     <li><a href="#" style="text-decoration:none">안전점검</a></li>
                     <li><a href="#" style="text-decoration:none">아이디어불패의 법칙</a></li>
-                    <li><a href="search-result.html" style="text-decoration:none">연금저축</a></li>
+                    <li><a href="#" style="text-decoration:none">상생협력법</a></li>
                     <li><a href="#" style="text-decoration:none">충청아이디어</a></li>
                     <li><a href="#" style="text-decoration:none">코로나</a></li>
                     <li><a href="#" style="text-decoration:none">고객발 자기혁신</a></li>
@@ -324,7 +358,7 @@
                                     <div class="category-block">
                                         <div class="header">
                                             <h4>IT 부문</h4>
-                                            <i class="fa fa-quora" style="color:#5672f9; font-size:20px"></i>
+                                            <i class="fa fa-quora" style="color:rgb(236, 88, 88); font-size:20px"></i>
                                         </div>
                                         <ul class="category-list">
                                             <li>
@@ -358,7 +392,7 @@
                                     <div class="category-block">
                                         <div class="header">
                                             <h4>IT 부문</h4>
-                                            <i class="fa fa-book" style="color:#5672f9; font-size:20px"></i>
+                                            <i class="fa fa-book" style="color: rgb(236, 88, 88); font-size:20px"></i>
                                         </div>
                                         <ul class="category-list">
                                             <li>
@@ -389,7 +423,7 @@
                                         <!-- User Name -->
                                         <h5 class="text-center">케이티 김</h5>
                                         <p>IT부문 신입사원</p>
-                                        <a href="mypage.html" class="btn btn-main-sm" style="background: #5672f9;
+                                        <a href="mypage.html" class="btn btn-main-sm" style="background:rgb(236, 88, 88);
                                     color: #fff;">내 정보 수정</a>
                                     </div>
                                 </div>
